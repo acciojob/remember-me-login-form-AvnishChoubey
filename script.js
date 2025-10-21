@@ -19,7 +19,7 @@ document.getElementById('existing').addEventListener('click', () => {
 
 function initialFunction() {
 	if(localStorage.getItem("username") != null)
-	document.getElementById('existing').style.display = block;
+	document.getElementById('existing').style.display = "block";
 }
 
 initialFunction();
