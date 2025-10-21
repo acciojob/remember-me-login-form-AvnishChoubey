@@ -1,8 +1,8 @@
 //your JS code here. If required.
-document.getELementById('submit').addEventListener('click', () => {
+document.getElementById('submit').addEventListener('click', () => {
 	const username = document.getElementById('username').value;
 	const password = document.getElementById('password').value;
-	const rememberme = document.getELementById('checkbox');
+	const rememberme = document.getElementById('checkbox');
 	if(rememberme.checked) {
 		localStorage.setItem("username", username);
 		localStorage.setItem("password", password);
@@ -19,7 +19,7 @@ document.getElementById('existing').addEventListener('click', () => {
 
 function initialFunction() {
 	if(localStorage.getItem("username") != null)
-	document.getELementById('existing').style.display = block;
+	document.getElementById('existing').style.display = block;
 }
 
 initialFunction();
