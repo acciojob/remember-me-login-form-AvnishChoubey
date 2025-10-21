@@ -1,13 +1,13 @@
 //your JS code here. If required.
 document.getELementById('submit').addEventListener('click', () => {
 	const username = document.getElementById('username').value;
-	cont password = document.getElementById('password').value;
+	const password = document.getElementById('password').value;
 	const rememberme = document.getELementById('checkbox');
 	if(rememberme.checked) {
-		localstorage.setItem("username", username);
-		localstorage.setItem("password", password);
+		localStorage.setItem("username", username);
+		localStorage.setItem("password", password);
 	} else {
-		localstorage.clear();
+		localStorage.clear();
 	}
 	alert(`Logged in as ${username}`);
 });
@@ -23,4 +23,3 @@ function initialFunction() {
 }
 
 initialFunction();
-
